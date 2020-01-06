@@ -9,9 +9,7 @@
   <ul>
     @foreach (Product p in Model)
     {
-      <li>
-        @p.Naam @p.Prijs euro
-      </li>
+      <li>@p.Naam @p.Prijs euro @p.Gewicht gram </li>
     }
   </ul>
   <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>

@@ -11,13 +11,13 @@ namespace SchoolTemplate.Controllers
   public class HomeController : Controller
   {
     // zorg ervoor dat je hier je gebruikersnaam (leerlingnummer) en wachtwoord invult
-    string connectionString = "Server=172.16.160.21;Port=3306;Database=;Uid=;Pwd=;";
+    string connectionString = "Server=172.16.160.21;Port=3306;Database=110082;Uid=110082;Pwd=agNARDOR;";
 
     public IActionResult Index()
     {
       List<Product> products = new List<Product>();
       // uncomment deze regel om producten uit je database toe te voegen
-      // products = GetProducts();
+      products = GetProducts();
 
       return View(products);
     }
@@ -40,9 +40,9 @@ namespace SchoolTemplate.Controllers
               Id = Convert.ToInt32(reader["Id"]),
               Naam = reader["Naam"].ToString(),
               Calorieen = float.Parse(reader["calorieen"].ToString()),
-              Formaat = reader["Naam"].ToString(),
-              Gewicht = Convert.ToInt32(reader["Naam"].ToString()),
-              Prijs = Decimal.Parse(reader["Naam"].ToString())
+              Formaat = reader["Formaat"].ToString(),
+              Gewicht = Convert.ToInt32(reader["Gewicht"].ToString()),
+              Prijs = Decimal.Parse(reader["Prijs"].ToString())
             };
             products.Add(p);
           }
