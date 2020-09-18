@@ -60,7 +60,8 @@
         max-height: 100%;
         width: auto;
         height: auto;
-        border: 3px solid #73AD21;
+        border-radius: 5px;
+        
     }
 .hoofdafbeelding {
     display: block;
