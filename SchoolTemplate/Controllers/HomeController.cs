@@ -29,6 +29,12 @@ namespace SchoolTemplate.Controllers
             return View();
         }
 
+        [Route("contact")]
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
         [Route("show-all")]
         public IActionResult ShowAll()
         {
