@@ -34,6 +34,14 @@ namespace SchoolTemplate.Controllers
         {
             return View();
         }
+        [Route("contact")]
+        [HttpPost]
+        public IActionResult Contact(string naam, string email)
+        {
+            ViewData["naam"] = naam;
+            ViewData["email"] = email;
+            return View();
+        }
 
         [Route("show-all")]
         public IActionResult ShowAll()

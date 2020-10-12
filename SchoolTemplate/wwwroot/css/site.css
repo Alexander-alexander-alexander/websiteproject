@@ -86,3 +86,6 @@
     background-size: contain;
     background-position: center center;
 }
+form {
+    color: chartreuse
+}

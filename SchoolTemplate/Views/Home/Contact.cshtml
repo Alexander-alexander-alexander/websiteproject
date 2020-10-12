@@ -4,3 +4,16 @@
     ViewData["Title"] = "Contact";
 }
 
+<form method="post">
+    <input type="text" name="Naam" placeholder="Uw naam" />
+    <input type="email" name="email" placeholder="Uw E-mail adres" />
+    <input type="text" name="Adres" placeholder="Uw Adres" />
+    <input type="text" name="Onderwerp" placeholder="Het onderwerp van de vraag" />
+    <input type="text" name="Vraag" placeholder="Wat is uw vraag?" />
+    <input type="submit" value="verstuur" />
+</form>
+
+<p>
+    Je naam is: @ViewData["naam"] <br />
+    Je email is: @ViewData["email"] <br />
+</p>
