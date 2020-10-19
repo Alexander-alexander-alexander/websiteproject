@@ -1,7 +1,7 @@
 ﻿@using SchoolTemplate.Database;
 @model List<Festival>
 @{
-    ViewData["Title"] = "Alle festivalz";
+    ViewData["Title"] = "Agenda";
 }
 <h1>gggg</h1>
 <div class="lijst">
@@ -10,7 +10,7 @@
         {
             foreach (Festival p in Model)
             {
-                <li>@p.Naam @p.Beschrijving euro @p.Datum gram </li>
+                <li>@p.Naam @p.Beschrijving @p.Datum  </li>
             }
         }
     </ul>

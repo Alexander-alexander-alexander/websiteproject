@@ -43,8 +43,8 @@ namespace SchoolTemplate.Controllers
             return View();
         }
 
-        [Route("show-all")]
-        public IActionResult ShowAll()
+        [Route("agenda")]
+        public IActionResult agenda()
         {
             return View(GetFestivals());
         }
@@ -85,7 +85,7 @@ namespace SchoolTemplate.Controllers
                         {
                             Id = Convert.ToInt32(reader["Id"]),
                             Naam = reader["Naam"].ToString(),
-
+                            Datum = DateTime.Parse(reader["datum"].ToString()),
                         };
                         festivals.Add(p);
                     }
